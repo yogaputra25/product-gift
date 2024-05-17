@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String
+  password  String
+  gift Gift[]
+  redeem RedeemedGift[]
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+model Gift {
+  id        Int      @id @default(autoincrement())
+  title     String   
+  price      String
+  description  String
+  stock  Int
+  image ImagesGift?
+  userId Int
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+  redeem RedeemedGift[] 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ImagesGift{
+   id        Int      @id @default(autoincrement())
+  userId Int
+  gift     Gift  @relation(fields: [giftId], references: [id])
+  giftId Int @unique
+  image String
+}
+
+model RedeemedGift{
+  id          Int       @id @default(autoincrement())
+  rating Float?
+  user        User     @relation(fields: [userId], references: [id])
+  userId      Int
+  gift     Gift  @relation(fields: [giftId], references: [id])
+  giftId   Int
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

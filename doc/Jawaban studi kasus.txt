@@ -1,0 +1,17 @@
+ PT Red Green Blue sedang mengerjakan sebuah project untuk perusahaan Travel untuk membuat sistem online 
+booking. Tim pada project tersebut terdiri dari Project Manager, Tech Lead, dan 1 anggota tim lain yang lebih senior. 
+Kamu adalah seorang Backend Developer yang diassign di tengah project tersebut. Task yang diberikan kepada 
+kamu adalah mengimplementasikan sebuah 3rd party library yang sebelumnya belum pernah kamu gunakan. 
+Resource yang kamu punya adalah repository dari project tersebut beserta dokumentasinya, dan dokumentasi 
+lengkap dari 3rd party library yang akan diintegrasikan. Untuk assignment ini, kamu sudah diberi timeline selama2 
+minggu dari PM-nya. 
+a. dari situasi di atas, di awal assignment, apa saja yang akan kamu lakukan? informasi apa yang kamu perlu tahu 
+sebelum memulai mengerjakan task? 
+b. jika ternyata di tengah pengerjaan kamu kesulitan dalam melakukan integrasi 3rd party library dan tidak yakin 
+bisa selesai di hari deadline, hal tersebut karena ada module dalam existing project yang perlu dimodifikasi 
+juga, jelaskan bagaimana kamu menginformasikan kepada tim (via email / message) dan siapa saja yang kamu 
+kontak?
+
+jawanan:
+a. Membaca dokumentasi terlebih dahulu kemudian memahami dulu desain third party tersebut dan alur pola hasil dari third party. Jika terjadi kebingungan untuk awal tanya ke senior terlebih dahulu, jika belum paham bisa ditanyakan Ketika Waktu meeting Bersama. Untuk informasi yang perlu adalah apa saja tool yang digunakan dan bagaimana cara menjalankan third party tersebut dan langsung mengeceknya.
+b. Jika memang tidak selesai di hari deadline maka saya akan bertanya dan berdiskusi dulu ke senior terlebih dahulu kallau perlu ajak ngantor Bersama untuk bahas masalah ini. Untuk chat "selamat siang saya yoga dari tim A mau menyampaikan untuk masalah terkait implementasi third party ada masalah terkait existing project dan harus ada modifikasi terlebih dahulu dan sepertinya akan melebihi deadline. Mungkin, apakah ada Waktu khusus untuk membahas masalah ini???".  Terus dari situ menawarkan solusi walau belum tentu menyelesaikan deadline tapi bisa menawarkan kerja lembur. untuk yang saya kontak senior team lead dan PM. 
